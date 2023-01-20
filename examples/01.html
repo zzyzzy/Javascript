@@ -14,6 +14,7 @@
 </script>
 
 <script>
+    console.log('  ');
     console.log('            +---+ ');
     console.log('            |   | ');
     console.log('        +---+---+ ');
@@ -24,5 +25,34 @@
     console.log('|   |   |   |   |      | | |     \\ Coder /   ');
     console.log('+---+---+---+---+     (__|__)      -----     ');
 </script>
+
+<script>
+    let soju = 3000;
+    let sj_qty = 2;
+    let chicken = 12000;
+    let chck_qty = 1;
+
+    let total = (soju * sj_qty) + (chicken * chck_qty)
+    let vat = total * 0.1;
+
+    let money = 50000;
+    let charge = money - total;
+
+    console.log('  ');
+    console.log(' [ 음식나라 ] ');
+    console.log(' ------------------------ ');
+    console.log(' 소주\t\t',sj_qty,'\t\t',soju*sj_qty);
+    console.log(` 너나치킨\t ${chck_qty}\t\t${chicken*chck_qty}`);
+    console.log(' ------------------------ ');
+    console.log(` 과세합계\t\t\t${total}`);
+    console.log(` 부가세\t\t\t\t${vat} `);
+    console.log(' ------------------------ ');
+    console.log(` 총합계\t\t\t\t${total}`);
+    console.log(` 받은금액\t\t\t${money}`);
+    console.log(` 잔돈\t\t\t\t${charge}`);
+    console.log(' ------------------------ ');
+    console.log(' 2023. 01. 20\t 13:06:24 ');
+</script>
+
 </body>
 </html>
